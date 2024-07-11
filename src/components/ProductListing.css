@@ -1,0 +1,78 @@
+
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f2f2f2; 
+  background-image: url('../assets/images/back.jpg'); 
+  background-size: cover;
+  background-position: center;
+  animation: fade-in 1s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.plant-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.5s ease-out;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.plant-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.plant-card p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.plant-card button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #4caf50; /* Green button background */
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plant-card button:disabled {
+  background-color: #ccc;
+}
+
+.plant-card button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
