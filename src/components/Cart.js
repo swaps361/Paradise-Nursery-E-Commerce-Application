@@ -45,7 +45,7 @@ const Cart = () => {
           <p>Amount to pay: ₹{totalPrice}</p>
           <p>Please proceed with the payment.</p>
           <p>Once the payment is completed, take a screenshot of the payment confirmation.</p>
-          <p>Send your complete address and phone number, along with the screenshot, to the email address: <a href="mailto:swapnildas742@gmail.com">swapnildas742@gmail.com</a></p>
+          <p>Send your complete address and phone number along with the screenshot to the email address: <a href="mailto:swapnildas742@gmail.com">swapnildas742@gmail.com</a></p>
           <p>You will receive the status of your order in your email within 10 minutes.</p>
         </div>
       )}
